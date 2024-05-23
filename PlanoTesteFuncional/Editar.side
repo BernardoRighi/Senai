@@ -1,0 +1,88 @@
+{
+  "id": "94ab8634-959d-4916-b88a-093d4f2f260c",
+  "version": "2.0",
+  "name": "Editar",
+  "url": "http://192.168.0.12:8081",
+  "tests": [{
+    "id": "aab6b429-87c1-49af-95bb-c9b55f0b2b90",
+    "name": "Excluir",
+    "commands": [{
+      "id": "62c5093d-5ca3-4de1-a3e8-b29a1292d8e6",
+      "comment": "",
+      "command": "open",
+      "target": "/listar",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6857a13e-9d3d-4045-81d8-f0424cf70ff5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "775x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af27ae18-e102-4972-943e-d0d6f0200728",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Clientes",
+      "targets": [
+        ["linkText=Clientes", "linkText"],
+        ["css=span:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Clientes')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/listar')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clientes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14eb1a1e-e156-4291-8b30-adcdab680ebb",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef4754d5-335b-4f2f-a493-50d5c90fc300",
+      "comment": "",
+      "command": "click",
+      "target": "css=th:nth-child(4)",
+      "targets": [
+        ["css=th:nth-child(4)", "css:finder"],
+        ["xpath=//th[4]", "xpath:position"],
+        ["xpath=//th[contains(.,'Editar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d529e15-0872-44f4-a37a-52c6226edcd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=th:nth-child(3)",
+      "targets": [
+        ["css=th:nth-child(3)", "css:finder"],
+        ["xpath=//th[3]", "xpath:position"],
+        ["xpath=//th[contains(.,'Endereço')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8813773d-1e63-45b0-9cf0-d135985fd91c",
+      "comment": "",
+      "command": "",
+      "target": "http://192.168.0.12:8081",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "796e2b16-8a46-43b0-846c-4a39c78678cb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["aab6b429-87c1-49af-95bb-c9b55f0b2b90"]
+  }],
+  "urls": ["http://192.168.0.12:8081/"],
+  "plugins": []
+}
